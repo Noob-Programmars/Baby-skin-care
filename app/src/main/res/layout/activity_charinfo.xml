@@ -163,6 +163,18 @@
         app:layout_constraintEnd_toEndOf="parent"
          />
 
+    <ImageView
+        android:id="@+id/femaleimg"
+        android:layout_width="78dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toEndOf="@+id/malebutton"
+        app:srcCompat="@drawable/femaleicon" />
+
     <Button
         android:id="@+id/finish"
         android:layout_width="wrap_content"
@@ -186,17 +198,5 @@
         app:layout_constraintHorizontal_bias="0.036"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/maleicon" />
-
-    <ImageView
-        android:id="@+id/femaleimg"
-        android:layout_width="78dp"
-        android:layout_height="72dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="84dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
-        app:layout_constraintStart_toEndOf="@+id/malebutton"
-        app:srcCompat="@drawable/femaleicon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

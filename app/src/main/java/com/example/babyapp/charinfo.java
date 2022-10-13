@@ -42,7 +42,16 @@ public class charinfo extends AppCompatActivity {
                 }
             }
         });
-
+        female.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gender = false;
+                if(gender==false){
+                    maleimg.setImageResource(R.drawable.maleicon);
+                    femaleimg.setImageResource(R.drawable.femaleon);
+                }
+            }
+        });
 
 
     }

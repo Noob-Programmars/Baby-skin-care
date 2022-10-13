@@ -153,7 +153,6 @@ public class HomeScreen extends AppCompatActivity {
             }
         });
 
-
     }
     public void foodwindow(){
         foodbutton=(ImageButton) findViewById(R.id.foodbutton);
