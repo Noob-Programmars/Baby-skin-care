@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/vilasbg4"
 
 
     >
@@ -22,43 +23,17 @@
         app:srcCompat="@drawable/babybathtub" />
 
 
-    <ImageButton
-        android:id="@+id/babybutton"
-        android:layout_width="181dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="112dp"
-        android:background="@android:color/transparent"
-        android:onClick="Showpopup"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/bathbutton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.59" />
-
     <ImageView
         android:id="@+id/babyview"
         android:layout_width="181dp"
         android:layout_height="171dp"
         app:layout_constraintBottom_toTopOf="@+id/bathbutton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.657"
+        app:layout_constraintVertical_bias="0.776"
         app:srcCompat="@drawable/bboy" />
-
-    <ImageButton
-        android:id="@+id/cribbutton"
-        android:layout_width="322dp"
-        android:layout_height="163dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="52dp"
-        android:background="@android:color/transparent"
-        android:onClick="Showpopup2"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/bathbutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cribview"
-        app:layout_constraintVertical_bias="0.976" />
 
     <ImageView
         android:id="@+id/cribview"
@@ -67,10 +42,38 @@
         android:foregroundGravity="center"
         app:layout_constraintBottom_toTopOf="@+id/bathbutton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/babybutton"
-        app:layout_constraintVertical_bias="0.558"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/cot" />
+
+    <ImageButton
+        android:id="@+id/babybutton"
+        android:layout_width="181dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="120dp"
+        android:background="@android:color/transparent"
+        android:onClick="Showpopup"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/bathbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <ImageButton
+        android:id="@+id/cribbutton"
+        android:layout_width="322dp"
+        android:layout_height="163dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="52dp"
+        android:background="@android:color/transparent"
+        android:onClick="Showpopup2"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/bathbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cribview"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/cartbutton"
