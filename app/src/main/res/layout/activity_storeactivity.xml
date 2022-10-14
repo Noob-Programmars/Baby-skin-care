@@ -553,7 +553,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/storetoysbutton"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.925" /
+                        app:layout_constraintVertical_bias="0.925" />
                     <ImageView
                         android:id="@+id/imageView27"
                         android:layout_width="39dp"
@@ -826,7 +826,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/storemoderncribbutton"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.925" /
+                        app:layout_constraintVertical_bias="0.925" />
                     <ImageView
                         android:id="@+id/imageView35"
                         android:layout_width="39dp"
