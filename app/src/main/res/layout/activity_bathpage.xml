@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".bathpage">
+    tools:context=".bathpage"
+    android:background="@drawable/vilasbg1">
 
     <ImageButton
         android:id="@+id/soapButton"
@@ -48,8 +49,8 @@
         android:id="@+id/imageView5"
         android:layout_width="231dp"
         android:layout_height="252dp"
-        android:layout_marginTop="268dp"
-        android:layout_marginEnd="88dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="92dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bath" />
@@ -58,8 +59,8 @@
         android:id="@+id/homebutton"
         android:layout_width="55dp"
         android:layout_height="55dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="35dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="344dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"

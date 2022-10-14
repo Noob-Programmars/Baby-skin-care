@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -22,7 +24,10 @@ public class HomeScreen extends AppCompatActivity{
      public ProgressBar diaper_pBar, hunger_pbar, cribsheets_pBar, cribcond_pBar;
      public Button diaper_pbutton, hunger_pbutton, cribsheets_pbutton, cribcond_pbutton;
      TextView txtclose;
-     public  ImageButton shopbutton, bathbutton, foodbutton;
+     Boolean  bit7=false, bit8=false, bit9=false, bit10=false,bit11=false;
+     public  ImageButton shopbutton, bathbutton, foodbutton,menubutton;
+     public ImageView drawerimg,cirbimg,alertimg;
+
 
 
     @Override
@@ -31,11 +36,23 @@ public class HomeScreen extends AppCompatActivity{
         setContentView(R.layout.activity_home_screen);
         mydialog = new Dialog(this);
         new Timer().schedule(task, 0, 1000);
+        drawerimg =(ImageView) findViewById(R.id.drawerimageview);
+        alertimg =(ImageView) findViewById(R.id.warningimg);
+        menubutton();
         cartbutton();
         bathwindow();
         foodwindow();
     }
-
+    public void menubutton(){
+        menubutton = findViewById(R.id.menubutton);
+        menubutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeScreen.this,menuactivity.class);
+                startActivity(intent);
+            }
+        });
+    }
     public void Showpopup(View v) {
 
         mydialog.setContentView(R.layout.babypopup);
@@ -60,6 +77,17 @@ public class HomeScreen extends AppCompatActivity{
             }
         });
         cribprogress();
+        mydialog.show();
+    }
+    public void showpopup3(View v){
+        mydialog.setContentView(R.layout.alertlayout);
+        txtclose = (TextView) mydialog.findViewById(R.id.txtclose);
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mydialog.dismiss();
+            }
+        });
         mydialog.show();
     }
 
@@ -104,6 +132,7 @@ public class HomeScreen extends AppCompatActivity{
     TimerTask task = new TimerTask() {
         @Override
         public void run() {
+
             if(diaper_pcount>0){
                 diaper_pcount--;
                 diaper_pBar.setProgress(diaper_pcount);
@@ -123,6 +152,12 @@ public class HomeScreen extends AppCompatActivity{
                 cribsheets_pcount--;
                 cribsheets_pBar.setProgress(cribsheets_pcount);
                 cribsheets_pBar.setMax(100);
+            }
+            if(diaper_pcount ==0 || hunger_pcount==0 || cribcond_pcount==0 || cribsheets_pcount==0){
+                  alertimg.setImageResource(R.drawable.warningsign);
+            }
+            if(diaper_pcount >0 && hunger_pcount>0 && cribcond_pcount>0 && cribsheets_pcount>0){
+                alertimg.setImageResource(0);
             }
 
         }

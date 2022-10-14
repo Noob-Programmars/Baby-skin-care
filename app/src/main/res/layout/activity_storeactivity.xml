@@ -182,6 +182,7 @@
                         android:layout_height="match_parent"
                         android:backgroundTint="#94000000"
                         android:padding="5dp"
+                        android:id="@+id/storeshampoobutton"
                         android:text="BUY"
                         android:textColor="#FFFBFB"
                         android:layout_marginRight="10dp"/>
@@ -224,6 +225,7 @@
                         android:layout_height="match_parent"
                         android:backgroundTint="#94000000"
                         android:padding="5dp"
+                        android:id="@+id/storesoapbutton"
                         android:text="BUY"
                         android:textColor="#FFFBFB"
                         android:layout_marginRight="10dp"/>
@@ -266,6 +268,7 @@
                         android:layout_height="match_parent"
                         android:backgroundTint="#94000000"
                         android:padding="5dp"
+                        android:id="@+id/storespongebutton"
                         android:text="BUY"
                         android:textColor="#FFFBFB"
                         android:layout_marginRight="10dp"/>
@@ -307,6 +310,7 @@
                         android:layout_width="100dp"
                         android:layout_height="match_parent"
                         android:backgroundTint="#94000000"
+                        android:id="@+id/storetoysbutton"
                         android:padding="5dp"
                         android:text="BUY"
                         android:textColor="#FFFBFB"
@@ -350,6 +354,7 @@
                         android:backgroundTint="#94000000"
                         android:padding="5dp"
                         android:text="BUY"
+                        android:id="@+id/storedrawer2button"
                         android:textColor="#FFFBFB"
                         android:layout_marginRight="10dp"/>
 
@@ -393,6 +398,7 @@
                         android:padding="5dp"
                         android:text="BUY"
                         android:textColor="#FFFBFB"
+                        android:id="@+id/storedrawer3button"
                         android:layout_marginRight="10dp"/>
 
                 </LinearLayout>
@@ -433,6 +439,7 @@
                         android:layout_height="match_parent"
                         android:backgroundTint="#94000000"
                         android:padding="5dp"
+                        android:id="@+id/storecrib2button"
                         android:text="BUY"
                         android:textColor="#FFFBFB"
                         android:layout_marginRight="10dp"/>
@@ -476,6 +483,7 @@
                         android:backgroundTint="#94000000"
                         android:padding="5dp"
                         android:text="BUY"
+                        android:id="@+id/storecrib3button"
                         android:textColor="#FFFBFB"
                         android:layout_marginRight="10dp"/>
 
