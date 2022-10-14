@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="350dp"
-    android:layout_height="300dp"
+    android:layout_height="200dp"
     android:layout_gravity="center"
     android:background="#E8DFCA">
 
@@ -18,27 +18,44 @@
             android:id="@+id/textView27"
             android:layout_width="17dp"
             android:layout_height="18dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:text="X"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView30"
             android:layout_width="184dp"
             android:layout_height="32dp"
-            android:text="Why should we keep the crib clean?"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="80dp"
             android:gravity="center"
-            tools:layout_editor_absoluteX="83dp"
+            android:text="Why should we keep the crib clean?"
             android:textColor="@color/black"
-            tools:layout_editor_absoluteY="16dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView34"
-            android:layout_width="157dp"
-            android:layout_height="63dp"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="97dp"
-            tools:layout_editor_absoluteY="55dp" />
+            android:layout_width="281dp"
+            android:layout_height="109dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:text="It could be the production of too much oil (sebum) in the oil glands and hair follicles, trapping dead skin cells. Another contributor may be a yeast (fungus) called Malassezia that grows in the sebum along with bacteria."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="97dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginBottom="128dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/pbg2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
