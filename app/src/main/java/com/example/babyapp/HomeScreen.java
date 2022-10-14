@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.example.myapplication.R;
 import com.google.android.material.progressindicator.LinearProgressIndicator;
 
 import java.util.Timer;
