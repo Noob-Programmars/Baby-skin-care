@@ -23,6 +23,16 @@
             android:textSize="16sp" />
     </LinearLayout>
 
+    <ImageButton
+        android:id="@+id/infobutton"
+        android:layout_width="39dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:background="@android:color/transparent"
+        android:onClick="infopopup"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/info" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="90dp"
