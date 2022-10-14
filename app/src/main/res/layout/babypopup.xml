@@ -13,7 +13,8 @@
     <LinearLayout
         android:layout_width="298dp"
         android:layout_height="29dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp" >
 
         <TextView
             android:id="@+id/txtclose"
@@ -175,7 +176,7 @@
         android:layout_gravity="bottom|left"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="10dp"
-        android:backgroundTint="#EAB4B4"
+        android:backgroundTint="#EAC1C1"
         android:text="Change Diapers"
         android:textAllCaps="false"
         android:textColor="#FDF8F8"
