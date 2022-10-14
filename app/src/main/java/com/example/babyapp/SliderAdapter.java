@@ -21,21 +21,24 @@ public class SliderAdapter extends PagerAdapter {
     }
 
     public int[] slide_images = {
-            R.drawable.eating,
-            R.drawable.bath,
-            R.drawable.sleep
+            R.drawable.crib,
+            R.drawable.feeding,
+            R.drawable.babybathtub,
+            R.drawable.sick
     };
 
     public String[] slide_headings = {
-            "EAT",
-            "BATH",
-            "SLEEP"
+            "BABY AND CRIB",
+            "BABY FOOD",
+            "BABY BATH",
+            "RASHES"
     };
 
     public String[] slide_discs = {
-            "bxjajb",
+            "Click on the baby to keep a track on the baby's health and hunger,see if the baby needs a change of diaper or if the crib needs to be cleaned.",
             "bajsg",
-            "xcbjsgdqj"
+            "xcbjsgdqj",
+            "hvjvj"
     };
     @Override
     public int getCount() {
