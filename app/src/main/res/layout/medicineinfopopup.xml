@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="350dp"
-    android:layout_height="350dp"
-    android:layout_gravity="center">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:background="#E8DFCA">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="20dp"
+            android:layout_height="23dp"
+            android:gravity="center"
+            android:text="X"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="6dp" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="260dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:layout_marginEnd="24dp"
+            android:text="A mild hydrocortisone cream twice a day for 3 to 5 days. An antifungal cream, if your baby has a fungal infection,  Moisturizer,mineral oil or a mild shampoo can help loosen and remove the scales."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
