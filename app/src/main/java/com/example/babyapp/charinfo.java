@@ -24,7 +24,7 @@ public class charinfo extends AppCompatActivity {
         finish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(charinfo.this,HomeScreen.class);
+                Intent intent = new Intent(charinfo.this,Slide_layout.class);
                 startActivity(intent);
             }
         });
