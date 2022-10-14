@@ -386,7 +386,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
-                        android:text="product descriptions qeqe"
+                        android:text="Default Drawer"
                         android:textAlignment="center"
                         android:textSize="25dp"
                         android:layout_marginRight="10dp"/>
@@ -429,7 +429,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
-                        android:text="product descriptions qeqe"
+                        android:text="Crib with Toy"
                         android:textAlignment="center"
                         android:textSize="25dp"
                         android:layout_marginRight="10dp"/>
@@ -472,7 +472,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
-                        android:text="product descriptions qeqe"
+                        android:text="Modern Crib"
                         android:textAlignment="center"
                         android:textSize="25dp"
                         android:layout_marginRight="10dp"/>
