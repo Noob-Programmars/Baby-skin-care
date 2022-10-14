@@ -67,11 +67,13 @@
             android:id="@+id/textView19"
             android:layout_width="254dp"
             android:layout_height="76dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="52dp"
             android:gravity="center"
             android:text="The basics steps to avoid rashes include changing diapers often, exposure to sun, changing clothes and sheets regulary, more time without diaper"
             android:textColor="#292727"
-            tools:layout_editor_absoluteX="53dp"
-            tools:layout_editor_absoluteY="227dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <ImageView
             android:id="@+id/imageView12"
