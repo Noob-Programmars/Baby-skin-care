@@ -42,9 +42,10 @@
                 android:orientation="horizontal">
 
                 <ImageView
+
                     android:layout_width="116dp"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/storemilk"
+                    app:srcCompat="@drawable/milk"
                     android:padding="10dp"
                     android:layout_marginLeft="10dp"/>
 
@@ -294,7 +295,7 @@
                 <ImageView
                     android:layout_width="116dp"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/storeshampoo"
+                    app:srcCompat="@drawable/shampoo"
                     android:padding="10dp"
                     android:layout_marginLeft="10dp"/>
 
