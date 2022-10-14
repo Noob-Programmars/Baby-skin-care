@@ -11,6 +11,34 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="6dp" />
+        tools:layout_editor_absoluteY="6dp" >
 
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="17dp"
+            android:layout_height="18dp"
+            android:text="X"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="184dp"
+            android:layout_height="32dp"
+            android:text="Why should we keep the crib clean?"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="83dp"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="157dp"
+            android:layout_height="63dp"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="55dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
