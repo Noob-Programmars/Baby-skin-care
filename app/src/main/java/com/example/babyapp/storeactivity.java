@@ -6,14 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class storeactivity extends AppCompatActivity {
     Button it1, it2, it3, it4, it5, it6, it7, it8, it9, it10,it11;
     int milkcount, foodcount, medicinecount, soapcount, shampoocount, spongecount, balance=100;
     Boolean  bit7=false, bit8=false, bit9=false, bit10=false,bit11=false;
-    HomeScreen hs = new HomeScreen();
-
+    ImageButton home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +30,7 @@ public class storeactivity extends AppCompatActivity {
         it10 = findViewById(R.id.storecrib2button);
         it11 = findViewById(R.id.storecrib3button);
         button();
-
+        homewindow();
 
     }
     public void button(){
@@ -162,6 +162,18 @@ public class storeactivity extends AppCompatActivity {
                 }
             }
         });
+
+    }
+    public void homewindow(){
+        home=(ImageButton) findViewById(R.id.homebutton);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(storeactivity.this,HomeScreen.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

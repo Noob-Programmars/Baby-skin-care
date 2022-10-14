@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".storeactivity">
 
+    <ImageButton
+        android:id="@+id/homebutton"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006"
+        app:srcCompat="@drawable/home" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="677dp"
@@ -17,6 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
@@ -33,7 +48,7 @@
                     android:padding="10dp"
                     android:layout_marginLeft="10dp"/>
 
-                <LinearLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -49,16 +64,55 @@
                         android:layout_marginRight="10dp"/>
 
                     <Button
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:backgroundTint="#94000000"
-                        android:padding="5dp"
                         android:id="@+id/storemilkbutton"
+                        android:layout_width="103dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginEnd="28dp"
+                        android:backgroundTint="#94000000"
+
+                        android:padding="5dp"
                         android:text="BUY"
                         android:textColor="#FFFBFB"
-                        android:layout_marginRight="10dp"/>
+                        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                </LinearLayout>
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="39dp"
+                        android:layout_height="37dp"
+                        android:layout_marginTop="75dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/info" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="39dp"
+                        android:layout_height="37dp"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="75dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/coin" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:gravity="center|left"
+                        android:text="30"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/storemilkbutton"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageView9"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.925" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -76,11 +130,22 @@
                     android:padding="10dp"
                     android:layout_marginLeft="10dp"/>
 
-                <LinearLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:gravity="center|left"
+                        android:text="30"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/storfoodbutton"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.925" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -89,19 +154,47 @@
                         android:text="baby food"
                         android:textAlignment="center"
                         android:textSize="25dp"
-                        android:layout_marginRight="10dp"/>
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <Button
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:backgroundTint="#94000000"
                         android:id="@+id/storfoodbutton"
+                        android:layout_width="103dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginEnd="28dp"
+                        android:backgroundTint="#94000000"
                         android:padding="5dp"
                         android:text="BUY"
                         android:textColor="#FFFBFB"
-                        android:layout_marginRight="10dp"/>
+                        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                </LinearLayout>
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="39dp"
+                        android:layout_height="37dp"
+                        android:layout_marginTop="75dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/info" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="39dp"
+                        android:layout_height="37dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="75dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/coin" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -119,7 +212,7 @@
                     android:padding="10dp"
                     android:layout_marginLeft="10dp"/>
 
-                <LinearLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -132,19 +225,58 @@
                         android:text="medicines"
                         android:textAlignment="center"
                         android:textSize="25dp"
-                        android:layout_marginRight="10dp"/>
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <Button
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
+                        android:id="@+id/button"
+                        android:layout_width="103dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="72dp"
+                        android:layout_marginEnd="28dp"
                         android:backgroundTint="#94000000"
                         android:padding="5dp"
-                        android:id="@+id/storemedicinebutton"
+
                         android:text="BUY"
                         android:textColor="#FFFBFB"
-                        android:layout_marginRight="10dp"/>
+                        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                </LinearLayout>
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="39dp"
+                        android:layout_height="37dp"
+                        android:layout_marginTop="75dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/info" />
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="39dp"
+                        android:layout_height="37dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="75dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/coin" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:gravity="center|left"
+                        android:text="30"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/button"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.925" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -478,14 +610,14 @@
                         android:layout_marginRight="10dp"/>
 
                     <Button
+                        android:id="@+id/storecrib3button"
                         android:layout_width="100dp"
                         android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
                         android:backgroundTint="#94000000"
                         android:padding="5dp"
                         android:text="BUY"
-                        android:id="@+id/storecrib3button"
-                        android:textColor="#FFFBFB"
-                        android:layout_marginRight="10dp"/>
+                        android:textColor="#FFFBFB" />
 
                 </LinearLayout>
             </LinearLayout>

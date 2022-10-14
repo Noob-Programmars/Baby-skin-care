@@ -15,7 +15,7 @@ import java.util.TimerTask;
 
 public class foodpage extends AppCompatActivity {
     public  ProgressBar baby_hungerBar;
-    public  ImageButton babyfood_pbutton, babymilk_pbutton;
+    public  ImageButton babyfood_pbutton, babymilk_pbutton,home;
     public  int babyfood_pcount = 0;
 
 
@@ -24,6 +24,7 @@ public class foodpage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_foodpage);
         hungerprogress();
+        homewindow();
     }
     public void hungerprogress(){
         babyfood_pbutton = (ImageButton) findViewById(R.id.babyfoodbutton);
@@ -42,6 +43,17 @@ public class foodpage extends AppCompatActivity {
                 }
             }
         });
+    }
+    public void homewindow(){
+        home=(ImageButton) findViewById(R.id.homebutton);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(foodpage.this,HomeScreen.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }
