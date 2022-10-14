@@ -3,11 +3,14 @@ package com.example.babyapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 
 public class storeactivity extends AppCompatActivity {
@@ -15,6 +18,8 @@ public class storeactivity extends AppCompatActivity {
     int milkcount, foodcount, medicinecount, soapcount, shampoocount, spongecount, balance=100;
     Boolean  bit7=false, bit8=false, bit9=false, bit10=false,bit11=false;
     ImageButton home;
+    TextView txtclose;
+    Dialog mydialog;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +37,7 @@ public class storeactivity extends AppCompatActivity {
         it10 = findViewById(R.id.storecribwithtoybutton);
         it11 = findViewById(R.id.storemoderncribbutton);
         button();
+        mydialog = new Dialog(this);
         homewindow();
 
     }
@@ -175,10 +181,83 @@ public class storeactivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+    }
+    public void milkinfopopup(View view){
+        mydialog.setContentView(R.layout.milkinfopopup);
+        txtclose = (TextView) mydialog.findViewById(R.id.txtclose);
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mydialog.dismiss();
+            }
+        });
+        mydialog.show();
 
     }
-    public void milkinfopopup(){
+    public void foodpopup(View view){
+
+        mydialog.setContentView(R.layout.foodinfopopup);
+        txtclose = (TextView) mydialog.findViewById(R.id.txtclose);
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mydialog.dismiss();
+            }
+        });
+        mydialog.show();
+
+    }
+
+    public void medicinepopup(View view){
+
+        mydialog.setContentView(R.layout.medicineinfopopup);
+        txtclose = (TextView) mydialog.findViewById(R.id.txtclose);
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mydialog.dismiss();
+            }
+        });
+        mydialog.show();
+
+    }
+    public void shampoopopup(View view){
+
+        mydialog.setContentView(R.layout.milkinfopopup);
+        txtclose = (TextView) mydialog.findViewById(R.id.txtclose);
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mydialog.dismiss();
+            }
+        });
+        mydialog.show();
+
+    }
+    public void soappopup(View view){
+
+        mydialog.setContentView(R.layout.milkinfopopup);
+        txtclose = (TextView) mydialog.findViewById(R.id.txtclose);
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mydialog.dismiss();
+            }
+        });
+        mydialog.show();
+
+    }
+    public void spongepopup(View view){
+
+        mydialog.setContentView(R.layout.milkinfopopup);
+        txtclose = (TextView) mydialog.findViewById(R.id.txtclose);
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mydialog.dismiss();
+            }
+        });
+        mydialog.show();
 
     }
 }
