@@ -111,32 +111,6 @@
         app:layout_constraintStart_toEndOf="@+id/bathbutton"
         app:srcCompat="@drawable/feeding" />
 
-    <LinearLayout
-        android:layout_width="110dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/roundedlinearlayout"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/coin"
-            android:layout_width="48dp"
-            android:layout_height="39dp"
-            app:srcCompat="@drawable/coin" />
-
-        <TextView
-            android:id="@+id/scoreview"
-            android:layout_width="61dp"
-            android:layout_height="match_parent"
-            android:text="100"
-            android:textAlignment="center"
-            android:textSize="24dp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
     <ImageView
         android:id="@+id/drawerimageview"
         android:layout_width="181dp"
@@ -173,10 +147,34 @@
         android:id="@+id/toyview"
         android:layout_width="107dp"
         android:layout_height="193dp"
-        android:layout_marginTop="276dp"
-        android:layout_marginEnd="340dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="348dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@null" />
+
+    <TextView
+        android:id="@+id/scoreview"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="100"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/coin"
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
