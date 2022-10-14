@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    android:background="#E8DFCA"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtclose"
+            android:layout_width="39dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="X"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="254dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="44dp"
+            android:gravity="center"
+            android:text="What rashes may the baby get?"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="256dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="124dp"
+            android:gravity="center"
+            android:text="What are some basic steps to avoid rashes?"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="250dp"
+            android:layout_height="69dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="212dp"
+            android:gravity="center"
+            android:text="Diaper rash, Drool rash, Cradle cap, Heat rash, Teething rash, Hives are the most commonly occuring rashes. "
+            android:textColor="#333131"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="254dp"
+            android:layout_height="76dp"
+            android:gravity="center"
+            android:text="The basics steps to avoid rashes include changing diapers often, exposure to sun, changing clothes and sheets regulary, more time without diaper"
+            android:textColor="#292727"
+            tools:layout_editor_absoluteX="53dp"
+            tools:layout_editor_absoluteY="227dp" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="69dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="276dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pbg1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

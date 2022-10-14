@@ -36,10 +36,7 @@ public class foodpage extends AppCompatActivity {
             public void onClick(View view) {
                 if (babyfood_pcount < 100) {
                     babyfood_pcount = 50;
-                    //Intent f = new Intent( foodpage.this, HomeScreen.class);
-                    //Log.v("intent f",""+f);
-                    //f.putExtra("hcount",babyfood_pcount);
-                    //startActivity(f);
+
                 }
             }
         });

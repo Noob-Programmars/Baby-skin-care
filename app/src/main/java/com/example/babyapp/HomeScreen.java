@@ -4,9 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -62,7 +60,7 @@ public class HomeScreen extends AppCompatActivity{
         });
     }
     public void infopopup(View v){
-        mydialog.setContentView(R.layout.infolayout);
+        mydialog.setContentView(R.layout.babypopupinfo);
         txtclose = (TextView) mydialog.findViewById(R.id.txtclose);
         txtclose.setOnClickListener(new View.OnClickListener() {
             @Override
