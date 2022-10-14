@@ -27,7 +27,7 @@ public class foodpage extends AppCompatActivity {
     }
     public void hungerprogress(){
         babyfood_pbutton = (ImageButton) findViewById(R.id.babyfoodbutton);
-        baby_hungerBar = (ProgressBar) findViewById(R.id.hungerfoodbar);
+
 
 
         babyfood_pbutton.setOnClickListener(new View.OnClickListener() {
