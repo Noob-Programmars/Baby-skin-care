@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -16,7 +17,7 @@ public class foodpage extends AppCompatActivity {
     public  ProgressBar baby_hungerBar;
     public  ImageButton babyfood_pbutton, babymilk_pbutton;
     public  int babyfood_pcount = 0;
-    Intent intent = new Intent(foodpage.this,HomeScreen.class);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,13 +28,17 @@ public class foodpage extends AppCompatActivity {
     public void hungerprogress(){
         babyfood_pbutton = (ImageButton) findViewById(R.id.babyfoodbutton);
         baby_hungerBar = (ProgressBar) findViewById(R.id.hungerfoodbar);
+
+
         babyfood_pbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (babyfood_pcount < 100) {
                     babyfood_pcount = 50;
-                    intent.putExtra("hcount",babyfood_pcount);
-                    startActivity(intent);
+                    //Intent f = new Intent( foodpage.this, HomeScreen.class);
+                    //Log.v("intent f",""+f);
+                    //f.putExtra("hcount",babyfood_pcount);
+                    //startActivity(f);
                 }
             }
         });
