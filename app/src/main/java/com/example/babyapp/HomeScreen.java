@@ -138,7 +138,7 @@ public class HomeScreen extends AppCompatActivity{
         shopbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeScreen.this,bathpage.class);
+                Intent intent = new Intent(HomeScreen.this,storeactivity.class);
                 startActivity(intent);
             }
         });
