@@ -31,7 +31,7 @@ public class HomeScreen extends AppCompatActivity{
      public static WeakReference<HomeScreen> weakActivity;
      public  ImageButton shopbutton, bathbutton, foodbutton,menubutton;
      public ImageView drawerimg,cirbimg,alertimg,toyimg;
-    MediaPlayer player = MediaPlayer.create(this,R.raw.babyappsound);
+
 
 
 
@@ -50,7 +50,9 @@ public class HomeScreen extends AppCompatActivity{
             NotificationManager manager = getSystemService(NotificationManager.class);
             manager.createNotificationChannel(channel);
         }
-
+        MediaPlayer player = MediaPlayer.create(this,R.raw.babyappsound);
+        player.setLooping(true);
+        player.start();
 
 
         weakActivity = new WeakReference<>(HomeScreen.this);
@@ -208,8 +210,7 @@ public class HomeScreen extends AppCompatActivity{
             if(diaper_pcount >10 ){
                 warning.setText("");
             }
-            player.setLooping(true);
-            player.start();
+
 
         }
     };
