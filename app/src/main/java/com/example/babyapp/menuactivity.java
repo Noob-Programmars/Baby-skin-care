@@ -9,13 +9,13 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class menuactivity extends AppCompatActivity {
-    Button login;
+    Button login,quiz;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menuactivity);
         loginwindow();
-
+        quizwindow();
     }
     public void loginwindow(){
         login=(Button) findViewById(R.id.button3);
@@ -27,5 +27,15 @@ public class menuactivity extends AppCompatActivity {
             }
         });
 
+    }
+    public void quizwindow(){
+        quiz=(Button) findViewById(R.id.quizbutton);
+        quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(menuactivity.this,quizactivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

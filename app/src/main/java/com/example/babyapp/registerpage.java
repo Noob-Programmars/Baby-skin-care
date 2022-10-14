@@ -19,7 +19,7 @@ public class registerpage extends AppCompatActivity {
         createacc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(registerpage.this, charinfo.class);
+                Intent intent = new Intent(registerpage.this, HomeScreen.class);
                 startActivity(intent);
             }
         });
