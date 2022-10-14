@@ -27,7 +27,7 @@ public class HomeScreen extends AppCompatActivity{
      public static WeakReference<HomeScreen> weakActivity;
      Boolean  bit7=false, bit8=false, bit9=false, bit10=false,bit11=false;
      public  ImageButton shopbutton, bathbutton, foodbutton,menubutton;
-     public ImageView drawerimg,cirbimg,alertimg;
+     public ImageView drawerimg,cirbimg,alertimg,toyimg;
 
 
 
@@ -38,7 +38,10 @@ public class HomeScreen extends AppCompatActivity{
         mydialog = new Dialog(this);
         new Timer().schedule(task, 0, 1000);
         drawerimg =(ImageView) findViewById(R.id.drawerimageview);
+        cirbimg = (ImageView) findViewById(R.id.cribview);
         alertimg =(ImageView) findViewById(R.id.warningimg);
+        toyimg = (ImageView) findViewById(R.id.toyview);
+
         weakActivity = new WeakReference<>(HomeScreen.this);
         menubutton();
         cartbutton();
@@ -211,8 +214,18 @@ public class HomeScreen extends AppCompatActivity{
             }
         });
     }
-    public void setdrawer(){
-        drawerimg.setImageResource(R.drawable.drawer2);
+    public void setimg(int i) {
+        if(i==0){
+            toyimg.setImageResource(R.drawable.toys);
+        }else if (i == 1) {
+            drawerimg.setImageResource(R.drawable.drawer2);
+        }else if(i==2){
+            drawerimg.setImageResource(R.drawable.drawer3);
+        }else if(i==3){
+            cirbimg.setImageResource(R.drawable.crib2);
+        }else if(i==4){
+            cirbimg.setImageResource(R.drawable.crib3);
+        }
     }
 
 }

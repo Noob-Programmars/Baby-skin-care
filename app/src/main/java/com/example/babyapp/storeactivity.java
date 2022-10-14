@@ -98,7 +98,7 @@ public class storeactivity extends AppCompatActivity {
                         it7.setText("Equip");
                     }
                 }else{
-                    HomeScreen.getmInstanceActivity().setdrawer();
+                    HomeScreen.getmInstanceActivity().setimg(0);
                 }
             }
 
@@ -106,25 +106,60 @@ public class storeactivity extends AppCompatActivity {
         it8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (bit8 == false) {
+                    if (balance >= 50) {
+                        balance = balance - 50;
+                        bit8 = true;
+                        it8.setText("Equip");
+                    }
+                }else{
+                    HomeScreen.getmInstanceActivity().setimg(1);
+                }
 
             }
         });
         it9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (bit9 == false) {
+                    if (balance >= 50) {
+                        balance = balance - 50;
+                        bit9 = true;
+                        it9.setText("Equip");
+                    }
+                }else{
+                    HomeScreen.getmInstanceActivity().setimg(2);
+                }
 
             }
         });
         it10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (bit10 == false) {
+                    if (balance >= 50) {
+                        balance = balance - 50;
+                        bit10 = true;
+                        it10.setText("Equip");
+                    }
+                }else{
+                    HomeScreen.getmInstanceActivity().setimg(3);
+                }
 
             }
         });
         it11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if (bit11 == false) {
+                    if (balance >= 50) {
+                        balance = balance - 50;
+                        bit11 = true;
+                        it11.setText("Equip");
+                    }
+                }else{
+                    HomeScreen.getmInstanceActivity().setimg(4);
+                }
             }
         });
 
