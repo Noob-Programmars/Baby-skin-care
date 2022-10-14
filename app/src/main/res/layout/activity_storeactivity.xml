@@ -6,10 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".storeactivity">
 
+<<<<<<< HEAD
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+=======
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="604dp"
+        android:layout_marginTop="92dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+>>>>>>> origin/main
 
         <LinearLayout
             android:layout_width="match_parent"
