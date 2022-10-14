@@ -12,14 +12,13 @@ import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.example.myapplication.R;
-import com.google.android.material.progressindicator.LinearProgressIndicator;
+
 
 import java.util.Timer;
 import java.util.TimerTask;
 public class HomeScreen extends AppCompatActivity{
      Dialog mydialog;
-     public  int diaper_pcount = 0, hunger_pcount = 0, cribsheets_pcount = 0, cribcond_pcount = 0;
+     public  int diaper_pcount = 0, hunger_pcount = 0, cribsheets_pcount = 0, cribcond_pcount = 0, balance = 100;
      public ProgressBar diaper_pBar, hunger_pbar, cribsheets_pBar, cribcond_pBar;
      public Button diaper_pbutton, hunger_pbutton, cribsheets_pbutton, cribcond_pbutton;
      TextView txtclose;
@@ -105,8 +104,6 @@ public class HomeScreen extends AppCompatActivity{
     TimerTask task = new TimerTask() {
         @Override
         public void run() {
-            //Intent r = getIntent();
-            //hunger_pcount=r.getIntExtra("hcount",0);
             if(diaper_pcount>0){
                 diaper_pcount--;
                 diaper_pBar.setProgress(diaper_pcount);
@@ -131,7 +128,7 @@ public class HomeScreen extends AppCompatActivity{
         }
     };
 
- //change cart button call
+
     public void cartbutton(){
         shopbutton=(ImageButton) findViewById(R.id.cartbutton);
         shopbutton.setOnClickListener(new View.OnClickListener() {

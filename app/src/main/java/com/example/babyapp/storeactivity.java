@@ -3,7 +3,6 @@ package com.example.babyapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-
 public class storeactivity extends AppCompatActivity {
 
     @Override
