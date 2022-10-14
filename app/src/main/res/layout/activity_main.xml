@@ -48,24 +48,19 @@
                 android:src="@drawable/user"></ImageView>
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-
+                android:id="@+id/lpemail"
+                android:layout_width="match_parent"                android:layout_height="40dp"
                 android:background="#3C5C5C5C"
                 android:hint="Enter Email"
                 android:textColor="@android:color/white"
                 android:textColorHint="@color/black"></EditText>
         </LinearLayout>
 
-        <androidx.appcompat.widget.SwitchCompat
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"></androidx.appcompat.widget.SwitchCompat>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
 
             <ImageView
                 android:layout_width="30dp"
@@ -73,27 +68,20 @@
                 android:src="@drawable/lock2"></ImageView>
 
             <EditText
+                android:id="@+id/lppassword"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:hint="Enter Password"
                 android:background="#3C5C5C5C"
+                android:hint="Enter Password"
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/black"></EditText>
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:padding="10dp"
-            android:text="Forgot Password?"
-            android:textColor="@android:color/white"
-            android:textSize="15dp"></TextView>
 
         <Button
             android:id="@+id/signin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
             android:backgroundTint="#94000000"
             android:padding="10dp"
 
@@ -102,6 +90,7 @@
 
         <Button
             android:id="@+id/create"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#94000000"
