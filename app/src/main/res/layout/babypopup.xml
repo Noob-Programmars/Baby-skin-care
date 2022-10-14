@@ -9,6 +9,11 @@
     android:orientation="vertical"
     android:padding="5dp"
     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@null">
 
     <LinearLayout
         android:layout_width="298dp"
@@ -19,7 +24,7 @@
         <TextView
             android:id="@+id/txtclose"
             android:layout_width="38dp"
-            android:layout_height="15dp"
+            android:layout_height="19dp"
             android:layout_weight="1"
             android:text="X"
             android:textAlignment="center"
@@ -186,4 +191,5 @@
         app:trackThickness="10dp" />
 
 
+</LinearLayout>
 </LinearLayout>
