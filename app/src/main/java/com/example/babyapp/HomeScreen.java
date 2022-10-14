@@ -69,7 +69,8 @@ public class HomeScreen extends AppCompatActivity{
         menubutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(HomeScreen.this,menuactivity.class);
+                startActivity(intent);
             }
         });
     }
