@@ -53,6 +53,17 @@ public class HomeScreen extends AppCompatActivity{
             }
         });
     }
+    public void infopopup(View v){
+        mydialog.setContentView(R.layout.infolayout);
+        txtclose = (TextView) mydialog.findViewById(R.id.txtclose);
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mydialog.dismiss();
+            }
+        });
+        mydialog.show();
+    }
     public void Showpopup(View v) {
 
         mydialog.setContentView(R.layout.babypopup);

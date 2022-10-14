@@ -43,7 +43,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
-                        android:text="product descriptions qeqe"
+                        android:text="Milk for baby"
                         android:textAlignment="center"
                         android:textSize="25dp"
                         android:layout_marginRight="10dp"/>
@@ -86,7 +86,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
-                        android:text="product descriptions qeqe"
+                        android:text="baby food"
                         android:textAlignment="center"
                         android:textSize="25dp"
                         android:layout_marginRight="10dp"/>
@@ -129,7 +129,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
-                        android:text="product descriptions qeqe"
+                        android:text="medicines"
                         android:textAlignment="center"
                         android:textSize="25dp"
                         android:layout_marginRight="10dp"/>
@@ -172,7 +172,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
-                        android:text="product descriptions qeqe"
+                        android:text="Shampoo"
                         android:textAlignment="center"
                         android:textSize="25dp"
                         android:layout_marginRight="10dp"/>
@@ -215,7 +215,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
-                        android:text="product descriptions qeqe"
+                        android:text="Soap"
                         android:textAlignment="center"
                         android:textSize="25dp"
                         android:layout_marginRight="10dp"/>
@@ -258,7 +258,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
-                        android:text="product descriptions qeqe"
+                        android:text="Sponge"
                         android:textAlignment="center"
                         android:textSize="25dp"
                         android:layout_marginRight="10dp"/>
