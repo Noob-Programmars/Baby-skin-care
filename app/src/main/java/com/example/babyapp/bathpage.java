@@ -13,6 +13,17 @@ public class bathpage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bathpage);
+        homewindow();
+    }
+    public void homewindow(){
+        home=(ImageButton) findViewById(R.id.homebutton);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(bathpage.this,HomeScreen.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
