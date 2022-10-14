@@ -65,6 +65,7 @@
                 android:src="@drawable/lock2"></ImageView>
 
             <EditText
+                android:id="@+id/newpassword"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="#3C5C5C5C"
@@ -83,10 +84,11 @@
                 android:src="@drawable/lock2"></ImageView>
 
             <EditText
+                android:id="@+id/newcnpassword"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:hint="Confirm Password"
                 android:background="#3C5C5C5C"
+                android:hint="Confirm Password"
                 android:inputType="textPassword"></EditText>
         </LinearLayout>
 
@@ -98,12 +100,14 @@
                 android:layout_width="30dp"
                 android:layout_height="40dp"
                 android:src="@drawable/user"></ImageView>
+
             <EditText
+                android:id="@+id/newusername"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:inputType="text"
                 android:background="#3C5C5C5C"
-                android:hint="Enter Username"></EditText>
+                android:hint="Enter Username"
+                android:inputType="text"></EditText>
         </LinearLayout>
 
         <LinearLayout
