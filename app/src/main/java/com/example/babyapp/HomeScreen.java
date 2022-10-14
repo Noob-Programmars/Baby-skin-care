@@ -48,8 +48,6 @@ public class HomeScreen extends AppCompatActivity {
         });
         babyprogress();
         mydialog.show();
-
-
     }
 
     public void Showpopup2(View v) {
@@ -140,8 +138,6 @@ public class HomeScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
     public void bathwindow(){
         bathbutton=(ImageButton) findViewById(R.id.bathbutton);
