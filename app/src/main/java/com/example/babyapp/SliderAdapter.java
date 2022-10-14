@@ -35,10 +35,10 @@ public class SliderAdapter extends PagerAdapter {
     };
 
     public String[] slide_discs = {
-            "Click on the baby to keep a track on the baby's health and hunger,see if the baby needs a change of diaper or if the crib needs to be cleaned.",
-            "bajsg",
-            "xcbjsgdqj",
-            "hvjvj"
+            "Click on the baby to keep a track on the baby's health and hunger,see if the baby needs a change of diaper or a bath.Click on the crib to ensure that the crib and sheets/pillows are clean. ",
+            "Feed the baby regularly with healthy nutrients to ensure that the baby is healthy and not hungry.If any symptoms of skin diseases occur the relevant medicines have to be used to treat the baby immediately.",
+            "Give the baby a shower using safe bath accessories at regular intervals and attend to the baby's safety and hygiene.",
+            "If you don't take regular measures to ensure the baby's safety and hygiene the baby is likely to be affected by skin rashes or other skin diseases.The alert messages gives you a hint about the underlying causes which has to be detected and treated."
     };
     @Override
     public int getCount() {
