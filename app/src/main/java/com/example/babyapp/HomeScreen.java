@@ -15,7 +15,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 
-
+import java.lang.ref.WeakReference;
 import java.util.Timer;
 import java.util.TimerTask;
 public class HomeScreen extends AppCompatActivity{
@@ -24,6 +24,7 @@ public class HomeScreen extends AppCompatActivity{
      public ProgressBar diaper_pBar, hunger_pbar, cribsheets_pBar, cribcond_pBar;
      public Button diaper_pbutton, hunger_pbutton, cribsheets_pbutton, cribcond_pbutton;
      TextView txtclose;
+     public static WeakReference<HomeScreen> weakActivity;
      Boolean  bit7=false, bit8=false, bit9=false, bit10=false,bit11=false;
      public  ImageButton shopbutton, bathbutton, foodbutton,menubutton;
      public ImageView drawerimg,cirbimg,alertimg;
@@ -38,10 +39,14 @@ public class HomeScreen extends AppCompatActivity{
         new Timer().schedule(task, 0, 1000);
         drawerimg =(ImageView) findViewById(R.id.drawerimageview);
         alertimg =(ImageView) findViewById(R.id.warningimg);
+        weakActivity = new WeakReference<>(HomeScreen.this);
         menubutton();
         cartbutton();
         bathwindow();
         foodwindow();
+    }
+    public static HomeScreen getmInstanceActivity(){
+        return weakActivity.get();
     }
     public void menubutton(){
         menubutton = findViewById(R.id.menubutton);
@@ -52,6 +57,17 @@ public class HomeScreen extends AppCompatActivity{
                 startActivity(intent);
             }
         });
+    }
+    public void infopopup(View v){
+        mydialog.setContentView(R.layout.infolayout);
+        txtclose = (TextView) mydialog.findViewById(R.id.txtclose);
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mydialog.dismiss();
+            }
+        });
+        mydialog.show();
     }
     public void Showpopup(View v) {
 
@@ -194,6 +210,9 @@ public class HomeScreen extends AppCompatActivity{
                 startActivity(intent);
             }
         });
+    }
+    public void setdrawer(){
+        drawerimg.setImageResource(R.drawable.drawer2);
     }
 
 }

@@ -97,6 +97,8 @@ public class storeactivity extends AppCompatActivity {
                         bit7 = true;
                         it7.setText("Equip");
                     }
+                }else{
+                    HomeScreen.getmInstanceActivity().setdrawer();
                 }
             }
 
