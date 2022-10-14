@@ -53,6 +53,7 @@
                         android:layout_height="match_parent"
                         android:backgroundTint="#94000000"
                         android:padding="5dp"
+                        android:id="@+id/storemilkbutton"
                         android:text="BUY"
                         android:textColor="#FFFBFB"
                         android:layout_marginRight="10dp"/>
@@ -94,6 +95,7 @@
                         android:layout_width="100dp"
                         android:layout_height="match_parent"
                         android:backgroundTint="#94000000"
+                        android:id="@+id/storfoodbutton"
                         android:padding="5dp"
                         android:text="BUY"
                         android:textColor="#FFFBFB"
@@ -137,6 +139,7 @@
                         android:layout_height="match_parent"
                         android:backgroundTint="#94000000"
                         android:padding="5dp"
+                        android:id="@+id/storemedicinebutton"
                         android:text="BUY"
                         android:textColor="#FFFBFB"
                         android:layout_marginRight="10dp"/>
