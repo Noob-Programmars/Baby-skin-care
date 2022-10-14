@@ -8,6 +8,7 @@ import android.app.Dialog;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -48,6 +49,9 @@ public class HomeScreen extends AppCompatActivity{
             NotificationManager manager = getSystemService(NotificationManager.class);
             manager.createNotificationChannel(channel);
         }
+        MediaPlayer player = MediaPlayer.create(this,R.raw.babyappsound);
+        player.setLooping(true);
+        player.start();
 
         weakActivity = new WeakReference<>(HomeScreen.this);
         menubutton();
