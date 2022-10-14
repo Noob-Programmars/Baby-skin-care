@@ -27,10 +27,10 @@ public class storeactivity extends AppCompatActivity {
         it5 = findViewById(R.id.storesoapbutton);
         it6 = findViewById(R.id.storespongebutton);
         it7 = findViewById(R.id.storetoysbutton);
-        it8 = findViewById(R.id.storedrawer2button);
-        it9 = findViewById(R.id.storedrawer3button);
-        it10 = findViewById(R.id.storecrib2button);
-        it11 = findViewById(R.id.storecrib3button);
+        it8 = findViewById(R.id.storebluedrawerbutton);
+        it9 = findViewById(R.id.storedefaultdrawerbutton);
+        it10 = findViewById(R.id.storecribwithtoybutton);
+        it11 = findViewById(R.id.storemoderncribbutton);
         button();
         homewindow();
 
@@ -176,6 +176,9 @@ public class storeactivity extends AppCompatActivity {
             }
         });
 
+
+    }
+    public void milkinfopopup(){
 
     }
 }
