@@ -57,8 +57,8 @@ public class storeactivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(balance>=25){
                     foodcount++;
-                    balance = balance-25;
-                    HomeScreen.getmInstanceActivity().setimg(5);
+
+                    HomeScreen.getmInstanceActivity().setimg(6);
                 }
             }
         });
@@ -67,8 +67,8 @@ public class storeactivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(balance>=25){
                     medicinecount++;
-                    balance = balance-25;
-                    HomeScreen.getmInstanceActivity().setimg(5);
+
+                    HomeScreen.getmInstanceActivity().setimg(7);
                 }
             }
         });
@@ -77,8 +77,8 @@ public class storeactivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(balance>=25){
                     shampoocount++;
-                    balance = balance-25;
-                    HomeScreen.getmInstanceActivity().setimg(5);
+
+                    HomeScreen.getmInstanceActivity().setimg(8);
                 }
             }
         });
@@ -87,8 +87,8 @@ public class storeactivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(balance>=25){
                     soapcount++;
-                    balance = balance-25;
-                    HomeScreen.getmInstanceActivity().setimg(5);
+
+                    HomeScreen.getmInstanceActivity().setimg(9);
                 }
             }
         });
@@ -97,8 +97,8 @@ public class storeactivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(balance>=25){
                     spongecount++;
-                    balance = balance-25;
-                    HomeScreen.getmInstanceActivity().setimg(5);
+
+                    HomeScreen.getmInstanceActivity().setimg(10);
                 }
             }
         });
@@ -107,7 +107,7 @@ public class storeactivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (bit7 == false) {
                     if (balance >= 50) {
-                        balance = balance - 50;
+
                         bit7 = true;
                         it7.setText("Equip");
                     }
@@ -122,7 +122,7 @@ public class storeactivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (bit8 == false) {
                     if (balance >= 50) {
-                        balance = balance - 50;
+
                         bit8 = true;
                         it8.setText("Equip");
                     }
@@ -137,7 +137,7 @@ public class storeactivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (bit9 == false) {
                     if (balance >= 50) {
-                        balance = balance - 50;
+
                         bit9 = true;
                         it9.setText("Equip");
                     }
@@ -152,7 +152,7 @@ public class storeactivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (bit10 == false) {
                     if (balance >= 50) {
-                        balance = balance - 50;
+
                         bit10 = true;
                         it10.setText("Equip");
                     }
@@ -167,7 +167,7 @@ public class storeactivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (bit11 == false) {
                     if (balance >= 50) {
-                        balance = balance - 50;
+
                         bit11 = true;
                         it11.setText("Equip");
                     }

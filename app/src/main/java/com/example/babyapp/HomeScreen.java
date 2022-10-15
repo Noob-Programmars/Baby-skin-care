@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -24,13 +25,14 @@ import java.util.Timer;
 import java.util.TimerTask;
 public class HomeScreen extends AppCompatActivity{
      Dialog mydialog;
-     public  int diaper_pcount = 0, hunger_pcount = 0, cribsheets_pcount = 0, cribcond_pcount = 0, balance = 100, health_pcoount=0;
-     public ProgressBar diaper_pBar, hunger_pbar, cribsheets_pBar, cribcond_pBar, hunger_pbar2, health_pbar,health_pbar2;
+     public  int diaper_pcount = 0, hunger_pcount = 0, cribsheets_pcount = 0, cribcond_pcount = 0, balance = 100, health_pcoount=0, clean_pcount=0, milkiconcount=0 , foodiconcount = 0, medicineiconcount =0, soapiconcount=0,shampooiconcount=0,spongeiconcount=0;
+     public ProgressBar diaper_pBar, hunger_pbar, cribsheets_pBar, cribcond_pBar, hunger_pbar2, health_pbar,health_pbar2, clean_pbar, clean_pbar2;
      public Button diaper_pbutton, cribsheets_pbutton, cribcond_pbutton;
      TextView txtclose, warning, balanceview;
      public static WeakReference<HomeScreen> weakActivity;
-     public  ImageButton shopbutton,menubutton,hunger_pbutton1,hunger_pbutton2, health_pbutton;
+     public  ImageButton shopbutton,menubutton,hunger_pbutton1,hunger_pbutton2, health_pbutton, clean1_pbutton, clean2_pbutton, clean3_pbutton;
      public ImageView drawerimg,cirbimg,toyimg;
+     public TextView milk1, food1, med1, shamp1, soap1,spong1;
 
 
 
@@ -75,12 +77,22 @@ public class HomeScreen extends AppCompatActivity{
         health_pbutton = (ImageButton) mydialog.findViewById(R.id.babymedicineButton);
         hunger_pbutton1 = (ImageButton) mydialog.findViewById(R.id.babymilkButton);
         hunger_pbutton2 = (ImageButton) mydialog.findViewById(R.id.babyfoodbutton);
+        med1 = (TextView) mydialog.findViewById(R.id.med1);
+        food1 = (TextView) mydialog.findViewById(R.id.food1);
+        milk1 = (TextView) mydialog.findViewById(R.id.milk1);
         hunger_pbutton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (hunger_pcount < 100) {
-                    hunger_pcount = 30;
-                    balance = balance +25;
+                if(milkiconcount>=1) {
+                    if (hunger_pcount < 50) {
+                        hunger_pcount = hunger_pcount + 50;
+                    } else if (hunger_pcount > 50 && hunger_pcount < 100) {
+                        hunger_pcount = hunger_pcount + (100 - hunger_pcount);
+
+                    }
+                    balance = balance + 25;
+                    milkiconcount--;
+                    milk1.setText(String.valueOf(milkiconcount));
                 }
 
             }
@@ -88,29 +100,106 @@ public class HomeScreen extends AppCompatActivity{
         hunger_pbutton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (hunger_pcount < 50) {
-                    hunger_pcount = hunger_pcount + 50;
-                }else if(hunger_pcount>50 && hunger_pcount<100){
-                    hunger_pcount = hunger_pcount +(100-hunger_pcount);
+                if(foodiconcount>=1) {
+
+                    if (hunger_pcount < 50) {
+                        hunger_pcount = hunger_pcount + 50;
+                    } else if (hunger_pcount > 50 && hunger_pcount < 100) {
+                        hunger_pcount = hunger_pcount + (100 - hunger_pcount);
+
+                    }
+                    balance = balance + 25;
+                    foodiconcount--;
+                    food1.setText(String.valueOf(foodiconcount));
 
                 }
-                balance = balance +25;
-
             }
         });
         health_pbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (hunger_pcount < 50) {
-                    hunger_pcount = hunger_pcount + 50;
-                }else if(hunger_pcount>50 && hunger_pcount<100){
-                    hunger_pcount = hunger_pcount +(100-hunger_pcount);
+                if(medicineiconcount>=1) {
+                    if (health_pcoount < 50) {
+                        health_pcoount = health_pcoount + 50;
+                    } else if (health_pcoount > 50 && health_pcoount < 100) {
+                        health_pcoount = health_pcoount + (100 - health_pcoount);
+
+                    }
+                    balance = balance + 25;
+                    medicineiconcount--;
+                    med1.setText(String.valueOf(medicineiconcount));
+                }
+            }
+        });
+    }
+
+    public void bathlayout(View v) {
+        mydialog.setContentView(R.layout.mainbathlayout);
+        mydialog.show();
+        bathprogress();
+    }
+    public void bathprogress(){
+        clean_pbar = (ProgressBar) mydialog.findViewById(R.id.cleanlinessprogressBar);
+        clean1_pbutton=(ImageButton) mydialog.findViewById(R.id.soapButton);
+        clean2_pbutton=(ImageButton) mydialog.findViewById(R.id.shampooButton);
+        clean3_pbutton=(ImageButton) mydialog.findViewById(R.id.spongeButton);
+        soap1=(TextView) mydialog.findViewById(R.id.soap1);
+        shamp1=(TextView) mydialog.findViewById(R.id.shamp1);
+        spong1=(TextView) mydialog.findViewById(R.id.sponge1);
+        clean1_pbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(soapiconcount>=1) {
+                    if (clean_pcount < 66) {
+                        clean_pcount = clean_pcount + 33;
+
+                    } else if (clean_pcount > 66 && clean_pcount < 100) {
+                        clean_pcount = clean_pcount + (100 - clean_pcount);
+                    }
+                    balance = balance + 25;
+                    soapiconcount--;
+                    soap1.setText(String.valueOf(soapiconcount));
 
                 }
-                balance = balance +25;
 
             }
         });
+        clean2_pbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (shampooiconcount >= 1) {
+
+
+                    if (clean_pcount < 66) {
+                        clean_pcount = clean_pcount + 33;
+                    } else if (clean_pcount > 66 && clean_pcount < 100) {
+                        clean_pcount = clean_pcount + (100 - clean_pcount);
+                    }
+                    balance = balance + 25;
+                    shampooiconcount--;
+                    shamp1.setText(String.valueOf(shampooiconcount));
+
+
+                }
+            }
+        });
+        clean3_pbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (spongeiconcount >= 1) {
+                    if (clean_pcount < 66) {
+                        clean_pcount = clean_pcount + 33;
+                    } else if (clean_pcount > 66 && clean_pcount < 100) {
+                        clean_pcount = clean_pcount + (100 - clean_pcount);
+                    }
+                    balance = balance + 25;
+                    spongeiconcount--;
+                    spong1.setText(String.valueOf(spongeiconcount));
+
+                }
+            }
+        });
+
     }
     public static HomeScreen getmInstanceActivity(){
         return weakActivity.get();
@@ -190,12 +279,13 @@ public class HomeScreen extends AppCompatActivity{
         diaper_pBar = (ProgressBar) mydialog.findViewById(R.id.diaperprogressBar);
         hunger_pbar2 = (ProgressBar) mydialog.findViewById(R.id.hungerprogressBar);
         health_pbar2 = (ProgressBar) mydialog.findViewById(R.id.healthprogressBar);
+        clean_pbar2 = (ProgressBar) mydialog.findViewById(R.id.cleanlinessprogressBar);
         diaper_pbutton = (Button) mydialog.findViewById(R.id.changediapers);
         diaper_pbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (diaper_pcount < 100) {
-                    diaper_pcount = 15;
+                    diaper_pcount = 100;
                     balance = balance +25;
                 }
 
@@ -244,6 +334,9 @@ public class HomeScreen extends AppCompatActivity{
                 hunger_pbar.setMax(100);
                 hunger_pbar2.setProgress(hunger_pcount);
                 hunger_pbar2.setMax(100);
+                milk1.setText(String.valueOf(milkiconcount));
+                food1.setText(String.valueOf(foodiconcount));
+                med1.setText(String.valueOf(medicineiconcount));
             }
             if(health_pcoount>0){
                 health_pcoount--;
@@ -251,6 +344,7 @@ public class HomeScreen extends AppCompatActivity{
                 health_pbar.setMax(100);
                 health_pbar2.setProgress(health_pcoount);
                 health_pbar2.setMax(100);
+
             }
             if(cribcond_pcount>0){
                 cribcond_pcount--;
@@ -262,10 +356,20 @@ public class HomeScreen extends AppCompatActivity{
                 cribsheets_pBar.setProgress(cribsheets_pcount);
                 cribsheets_pBar.setMax(100);
             }
-            if(diaper_pcount==1) {
+            if(clean_pcount>0){
+                clean_pcount--;
+                clean_pbar.setProgress(clean_pcount);
+                clean_pbar.setMax(100);
+                clean_pbar2.setProgress(clean_pcount);
+                clean_pbar2.setMax(100);
+                soap1.setText(String.valueOf(soapiconcount));
+                shamp1.setText(String.valueOf(shampooiconcount));
+                spong1.setText(String.valueOf(spongeiconcount));
+            }
+            if(diaper_pcount==10) {
                 NotificationCompat.Builder builder = new NotificationCompat.Builder( HomeScreen.this,"My Notification");
                 builder.setContentTitle("Your baby needs you!");
-                builder.setContentText("time to change the baby's diaper");
+                builder.setContentText("time to care for the baby");
                 builder.setSmallIcon(R.drawable.ic_launcher_background);
                 builder.setAutoCancel(true);
 
@@ -281,18 +385,7 @@ public class HomeScreen extends AppCompatActivity{
 
         }
     };
-    public void bathlayout(View v) {
 
-        mydialog.setContentView(R.layout.mainbathlayout);
-        //txtclose = (TextView) mydialog.findViewById(R.id.txtclose);
-        //txtclose.setOnClickListener(new View.OnClickListener() {
-        //  @Override
-        // public void onClick(View view) {
-        //   mydialog.dismiss();
-        //}
-        //});
-        mydialog.show();
-    }
 
 
     public void cartbutton(){
@@ -310,22 +403,48 @@ public class HomeScreen extends AppCompatActivity{
 
     public void setimg(int i) {
         if(i==0){
+            if(balance>50){
             toyimg.setImageResource(R.drawable.toys);
-            balance = balance -50;
+            balance = balance -50;}
         }else if (i == 1) {
+            if(balance>50){
             drawerimg.setImageResource(R.drawable.drawer2);
-            balance = balance -50;
+            balance = balance -50;}
         }else if(i==2){
+            if(balance>50){
             drawerimg.setImageResource(R.drawable.drawer3);
-            balance = balance -50;
+            balance = balance -50;}
         }else if(i==3){
+            if(balance>50){
             cirbimg.setImageResource(R.drawable.crib2);
-            balance = balance -50;
+            balance = balance -50;}
         }else if(i==4){
+            if(balance>50){
             cirbimg.setImageResource(R.drawable.crib3);
-            balance = balance -50;
+            balance = balance -50;}
         }else if(i==5){
-            balance = balance -25;
+            if(balance>25){
+            milkiconcount++;
+            balance = balance -25;}
+        } else if(i==6){
+            if(balance>25){
+            foodiconcount++;
+            balance = balance -25;}
+        }else if(i==7){
+            if(balance>25){
+            medicineiconcount++;
+            balance = balance -25;}
+        }else if(i==8){if(balance>25){
+            shampooiconcount++;
+            balance = balance -25;}
+        }else if(i==9){
+            if(balance>25){
+            soapiconcount++;
+            balance = balance -25;}
+        }else if(i==10){
+            if(balance>25){
+            spongeiconcount++;
+            balance = balance -25;}
         }
     }
 

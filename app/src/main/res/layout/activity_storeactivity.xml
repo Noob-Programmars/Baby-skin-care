@@ -6,20 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".storeactivity">
 
-    <TextView
-        android:id="@+id/scoreview"
-        android:layout_width="61dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="12dp"
-        android:gravity="center"
-        android:text="100"
-        android:textAlignment="center"
-        android:textSize="24dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageButton
         android:id="@+id/homebutton"
         android:layout_width="70dp"
@@ -963,15 +949,5 @@
         </LinearLayout>
 
     </ScrollView>
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="46dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/coin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
