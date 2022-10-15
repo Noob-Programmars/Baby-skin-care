@@ -11,6 +11,7 @@
         android:id="@+id/bathbutton"
         android:layout_width="89dp"
         android:layout_height="81dp"
+        android:onClick="bathlayout"
         android:layout_marginBottom="32dp"
         android:background="@null"
         android:scaleType="fitCenter"
