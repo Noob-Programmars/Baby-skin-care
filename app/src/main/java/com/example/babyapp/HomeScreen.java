@@ -25,7 +25,7 @@ import java.util.TimerTask;
 public class HomeScreen extends AppCompatActivity{
      Dialog mydialog;
      public  int diaper_pcount = 0, hunger_pcount = 0, cribsheets_pcount = 0, cribcond_pcount = 0, balance = 100;
-     public ProgressBar diaper_pBar, hunger_pbar, cribsheets_pBar, cribcond_pBar;
+     public ProgressBar diaper_pBar, hunger_pbar, cribsheets_pBar, cribcond_pBar, hunger_pbar2;
      public Button diaper_pbutton, cribsheets_pbutton, cribcond_pbutton;
      TextView txtclose, warning, balanceview;
      public static WeakReference<HomeScreen> weakActivity;
@@ -67,6 +67,7 @@ public class HomeScreen extends AppCompatActivity{
 
         mydialog.show();
         hungerprogress();
+
     }
     public void hungerprogress() {
         hunger_pbar = (ProgressBar) mydialog.findViewById(R.id.hungerprogressBar);
@@ -170,7 +171,7 @@ public class HomeScreen extends AppCompatActivity{
 
     public void babyprogress() {
         diaper_pBar = (ProgressBar) mydialog.findViewById(R.id.diaperprogressBar);
-
+        hunger_pbar2 = (ProgressBar) mydialog.findViewById(R.id.hungerprogressBar);
         diaper_pbutton = (Button) mydialog.findViewById(R.id.changediapers);
         diaper_pbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -223,6 +224,9 @@ public class HomeScreen extends AppCompatActivity{
                 hunger_pcount--;
                 hunger_pbar.setProgress(hunger_pcount);
                 hunger_pbar.setMax(100);
+                hunger_pbar2.setProgress(hunger_pcount);
+                hunger_pbar2.setMax(100);
+
             }
             if(cribcond_pcount>0){
                 cribcond_pcount--;
