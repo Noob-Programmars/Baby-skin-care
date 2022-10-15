@@ -281,7 +281,18 @@ public class HomeScreen extends AppCompatActivity{
 
         }
     };
+    public void bathlayout(View v) {
 
+        mydialog.setContentView(R.layout.mainbathlayout);
+        //txtclose = (TextView) mydialog.findViewById(R.id.txtclose);
+        //txtclose.setOnClickListener(new View.OnClickListener() {
+        //  @Override
+        // public void onClick(View view) {
+        //   mydialog.dismiss();
+        //}
+        //});
+        mydialog.show();
+    }
 
 
     public void cartbutton(){
