@@ -25,6 +25,7 @@ public class foodpage extends AppCompatActivity {
         setContentView(R.layout.activity_foodpage);
         hungerprogress();
         homewindow();
+
     }
     public void hungerprogress(){
         babyfood_pbutton = (ImageButton) findViewById(R.id.babyfoodbutton);
@@ -36,6 +37,7 @@ public class foodpage extends AppCompatActivity {
             public void onClick(View view) {
                 if (babyfood_pcount < 100) {
                     babyfood_pcount = 50;
+
 
                 }
             }
@@ -50,7 +52,7 @@ public class foodpage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
+
 
 }

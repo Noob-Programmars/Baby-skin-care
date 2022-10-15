@@ -25,7 +25,6 @@ public class Slide_layout extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide_layout);
         mslideViewPager = (ViewPager) findViewById(R.id.slideViewPager);
-        mDotlayer = (LinearLayout) findViewById(R.id.dotslayer);
         sliderAdapter = new SliderAdapter(this);
         mslideViewPager.setAdapter(sliderAdapter);
         skip =(Button) findViewById(R.id.skipbutton);

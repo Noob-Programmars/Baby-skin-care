@@ -48,6 +48,7 @@ public class storeactivity extends AppCompatActivity {
                 if(balance>=25){
                     milkcount++;
                     balance = balance-25;
+                    HomeScreen.getmInstanceActivity().setimg(5);
                 }
             }
         });
@@ -57,6 +58,7 @@ public class storeactivity extends AppCompatActivity {
                 if(balance>=25){
                     foodcount++;
                     balance = balance-25;
+                    HomeScreen.getmInstanceActivity().setimg(5);
                 }
             }
         });
@@ -66,6 +68,7 @@ public class storeactivity extends AppCompatActivity {
                 if(balance>=25){
                     medicinecount++;
                     balance = balance-25;
+                    HomeScreen.getmInstanceActivity().setimg(5);
                 }
             }
         });
@@ -75,6 +78,7 @@ public class storeactivity extends AppCompatActivity {
                 if(balance>=25){
                     shampoocount++;
                     balance = balance-25;
+                    HomeScreen.getmInstanceActivity().setimg(5);
                 }
             }
         });
@@ -84,6 +88,7 @@ public class storeactivity extends AppCompatActivity {
                 if(balance>=25){
                     soapcount++;
                     balance = balance-25;
+                    HomeScreen.getmInstanceActivity().setimg(5);
                 }
             }
         });
@@ -93,6 +98,7 @@ public class storeactivity extends AppCompatActivity {
                 if(balance>=25){
                     spongecount++;
                     balance = balance-25;
+                    HomeScreen.getmInstanceActivity().setimg(5);
                 }
             }
         });

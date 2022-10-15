@@ -72,7 +72,7 @@ public class quizactivity extends AppCompatActivity implements View.OnClickListe
         ansA.setText(QuestionAnswers.choices[quizcurrentquestionindex][0]);
         ansB.setText(QuestionAnswers.choices[quizcurrentquestionindex][1]);
         ansC.setText(QuestionAnswers.choices[quizcurrentquestionindex][2]);
-        ansD.setText(QuestionAnswers.choices[quizcurrentquestionindex][3 ]);
+        ansD.setText(QuestionAnswers.choices[quizcurrentquestionindex][3]);
     }
     void finishQuiz(){
         String passStatus = "";

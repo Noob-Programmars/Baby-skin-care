@@ -75,6 +75,7 @@
                         android:layout_height="75dp"
                         android:gravity="center"
                         android:text="Milk for baby"
+                        android:textColor="@color/black"
                         android:textAlignment="center"
                         android:textSize="25dp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -121,11 +122,11 @@
                         android:id="@+id/textView16"
                         android:layout_width="39dp"
                         android:layout_height="39dp"
-                        android:gravity="center|left"
+                        android:gravity="center"
                         android:text="30"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/storemilkbutton"
-                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toEndOf="@+id/imageView9"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.925" />
@@ -159,10 +160,12 @@
                         android:id="@+id/textView17"
                         android:layout_width="39dp"
                         android:layout_height="39dp"
-                        android:gravity="center|left"
+                        android:gravity="center"
                         android:text="30"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/storfoodbutton"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageView10"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.925" />
 
@@ -171,6 +174,7 @@
                         android:layout_height="75dp"
                         android:gravity="center"
                         android:text="baby food"
+                        android:textColor="@color/black"
                         android:textAlignment="center"
                         android:textSize="25dp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -246,6 +250,7 @@
                         android:text="medicines"
                         android:textAlignment="center"
                         android:textSize="25dp"
+                        android:textColor="@color/black"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -291,10 +296,12 @@
                         android:id="@+id/textView18"
                         android:layout_width="39dp"
                         android:layout_height="39dp"
-                        android:gravity="center|left"
+                        android:gravity="center"
                         android:text="30"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/storemedicinebutton"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageView11"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.925" />
 
@@ -340,10 +347,12 @@
                         android:id="@+id/textView23"
                         android:layout_width="39dp"
                         android:layout_height="39dp"
-                        android:gravity="center|left"
+                        android:layout_marginEnd="4dp"
+                        android:gravity="center"
                         android:text="30"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/storeshampoobutton"
+                        app:layout_constraintStart_toEndOf="@+id/imageView12"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.925" />
 
@@ -353,6 +362,7 @@
                         android:layout_height="75dp"
                         android:gravity="center"
                         android:text="Shampoo"
+                        android:textColor="@color/black"
                         android:textAlignment="center"
                         android:textSize="25dp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -411,10 +421,12 @@
                         android:id="@+id/textView24"
                         android:layout_width="39dp"
                         android:layout_height="39dp"
-                        android:gravity="center|left"
+                        android:gravity="center"
                         android:text="30"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/storesoapbutton"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageView24"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.925" />
 
@@ -450,6 +462,7 @@
                         android:textAlignment="center"
                         android:textSize="25dp"
                         app:layout_constraintEnd_toEndOf="parent"
+                        android:textColor="@color/black"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -497,10 +510,12 @@
                         android:id="@+id/textView26"
                         android:layout_width="39dp"
                         android:layout_height="39dp"
-                        android:gravity="center|left"
+                        android:gravity="center"
                         android:text="30"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/storespongebutton"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageView25"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.925" />
 
@@ -534,6 +549,7 @@
                         android:text="Sponge"
                         android:textAlignment="center"
                         android:textSize="25dp"
+                        android:textColor="@color/black"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -584,65 +600,19 @@
                         android:orientation="vertical"
                         tools:layout_editor_absoluteY="130dp">
 
+
                         <TextView
-                            android:id="@+id/textView29"
+                            android:id="@+id/textView28"
                             android:layout_width="39dp"
                             android:layout_height="39dp"
-                            android:gravity="center|left"
-                            android:text="30"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/storebluedrawerbutton"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.925" />
-
-                        <ImageView
-                            android:id="@+id/imageView28"
-                            android:layout_width="39dp"
-                            android:layout_height="37dp"
-                            android:layout_marginStart="4dp"
-                            android:layout_marginTop="75dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/coin" />
-
-                        <TextView
-                            android:id="@+id/textView31"
-                            android:layout_width="match_parent"
-                            android:layout_height="75dp"
+                            android:layout_marginTop="76dp"
                             android:gravity="center"
-                            android:text="Blue Drawer"
-                            android:textAlignment="center"
-                            android:textSize="20dp"
+                            android:text="30"
                             app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.185"
+                            app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
-
-                        <Button
-                            android:id="@+id/storebluedrawerbutton"
-                            android:layout_width="103dp"
-                            android:layout_height="48dp"
-                            android:layout_marginTop="72dp"
-
-                            android:layout_marginEnd="70dp"
-
-                            android:backgroundTint="#94000000"
-                            android:padding="5dp"
-                            android:text="BUY"
-                            android:textColor="#FFFBFB"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
                     </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <TextView
-                        android:id="@+id/textView28"
-                        android:layout_width="39dp"
-                        android:layout_height="39dp"
-                        android:gravity="center|left"
-                        android:text="30"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/storetoysbutton"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.925" />
 
                     <ImageView
                         android:id="@+id/imageView27"
@@ -662,6 +632,7 @@
                         android:text="Toys"
                         android:textAlignment="center"
                         android:textSize="25dp"
+                        android:textColor="@color/black"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -698,6 +669,63 @@
                     android:layout_marginLeft="10dp"
                     android:padding="10dp"
                     app:srcCompat="@drawable/drawer2" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="265dp"
+                        android:layout_height="71dp"
+
+                        android:gravity="center"
+                        android:text="Blue Drawer"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView3141"
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:layout_marginTop="72dp"
+                        android:layout_marginEnd="184dp"
+                        android:gravity="center"
+                        android:text="30"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView3424"
+                        android:layout_width="39dp"
+                        android:layout_height="37dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="75dp"
+                        app:layout_constraintEnd_toStartOf="@+id/textView3141"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/coin" />
+
+                    <Button
+                        android:id="@+id/storebluedrawerbutton"
+                        android:layout_width="103dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="72dp"
+                        android:backgroundTint="#94000000"
+                        android:padding="5dp"
+                        android:text="BUY"
+                        android:textColor="#FFFBFB"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
 
             </LinearLayout>
 
@@ -727,10 +755,12 @@
                         android:id="@+id/textView32"
                         android:layout_width="39dp"
                         android:layout_height="39dp"
-                        android:gravity="center|left"
+                        android:gravity="center"
                         android:text="30"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/storedefaultdrawerbutton"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageView33"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.925" />
 
@@ -751,6 +781,7 @@
                         android:text="Default Drawer"
                         android:textAlignment="center"
                         android:textSize="25dp"
+                        android:textColor="@color/black"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -797,10 +828,12 @@
                         android:id="@+id/textView33"
                         android:layout_width="39dp"
                         android:layout_height="39dp"
-                        android:gravity="center|left"
+                        android:gravity="center"
                         android:text="30"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/storecribwithtoybutton"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageView34"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.925" />
 
@@ -823,6 +856,7 @@
                         android:textAlignment="center"
                         android:textSize="25dp"
                         app:layout_constraintEnd_toEndOf="parent"
+                        android:textColor="@color/black"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <Button
@@ -868,10 +902,12 @@
                         android:id="@+id/textView36"
                         android:layout_width="39dp"
                         android:layout_height="39dp"
-                        android:gravity="center|left"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center"
                         android:text="30"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/storemoderncribbutton"
+                        app:layout_constraintStart_toEndOf="@+id/imageView35"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.925" />
 
@@ -893,6 +929,7 @@
                         android:text="Modern Crib"
                         android:textAlignment="center"
                         android:textSize="25dp"
+                        android:textColor="@color/black"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 

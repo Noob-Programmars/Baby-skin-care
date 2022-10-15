@@ -27,10 +27,10 @@ public class HomeScreen extends AppCompatActivity{
      public  int diaper_pcount = 0, hunger_pcount = 0, cribsheets_pcount = 0, cribcond_pcount = 0, balance = 100;
      public ProgressBar diaper_pBar, hunger_pbar, cribsheets_pBar, cribcond_pBar;
      public Button diaper_pbutton, hunger_pbutton, cribsheets_pbutton, cribcond_pbutton;
-     TextView txtclose,warning;
+     TextView txtclose, warning, balanceview;
      public static WeakReference<HomeScreen> weakActivity;
      public  ImageButton shopbutton, bathbutton, foodbutton,menubutton;
-     public ImageView drawerimg,cirbimg,alertimg,toyimg;
+     public ImageView drawerimg,cirbimg,toyimg;
 
 
 
@@ -43,6 +43,7 @@ public class HomeScreen extends AppCompatActivity{
         new Timer().schedule(task, 0, 1000);
         drawerimg =(ImageView) findViewById(R.id.drawerimageview);
         cirbimg = (ImageView) findViewById(R.id.cribview);
+        balanceview = (TextView) findViewById(R.id.scoreview);
         warning =(TextView) findViewById(R.id.warningtext);
         toyimg = (ImageView) findViewById(R.id.toyview);
         if(Build.VERSION.SDK_INT >=Build.VERSION_CODES.O){
@@ -73,6 +74,9 @@ public class HomeScreen extends AppCompatActivity{
                 startActivity(intent);
             }
         });
+    }
+    public void setvalue(){
+        hunger_pcount= 50;
     }
     public void infopopup(View v){
         mydialog.setContentView(R.layout.babypopupinfo);
@@ -143,6 +147,7 @@ public class HomeScreen extends AppCompatActivity{
             public void onClick(View view) {
                 if (diaper_pcount < 100) {
                     diaper_pcount = 15;
+                    balance = balance +25;
                 }
 
             }
@@ -157,6 +162,7 @@ public class HomeScreen extends AppCompatActivity{
             public void onClick(View view) {
                 if (cribcond_pcount < 100) {
                     cribcond_pcount = 100;
+                    balance = balance +25;
                 }
             }
         });
@@ -167,6 +173,7 @@ public class HomeScreen extends AppCompatActivity{
             public void onClick(View view) {
                 if (cribsheets_pcount < 100) {
                     cribsheets_pcount = 100;
+                    balance = balance +25;
                 }
             }
         });
@@ -212,6 +219,7 @@ public class HomeScreen extends AppCompatActivity{
                 warning.setText("");
             }
 
+            balanceview.setText(String.valueOf(balance));
 
         }
     };
@@ -252,14 +260,21 @@ public class HomeScreen extends AppCompatActivity{
     public void setimg(int i) {
         if(i==0){
             toyimg.setImageResource(R.drawable.toys);
+            balance = balance -50;
         }else if (i == 1) {
             drawerimg.setImageResource(R.drawable.drawer2);
+            balance = balance -50;
         }else if(i==2){
             drawerimg.setImageResource(R.drawable.drawer3);
+            balance = balance -50;
         }else if(i==3){
             cirbimg.setImageResource(R.drawable.crib2);
+            balance = balance -50;
         }else if(i==4){
             cirbimg.setImageResource(R.drawable.crib3);
+            balance = balance -50;
+        }else if(i==5){
+            balance = balance -25;
         }
     }
 
