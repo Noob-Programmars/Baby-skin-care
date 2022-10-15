@@ -59,8 +59,19 @@ public class HomeScreen extends AppCompatActivity{
         weakActivity = new WeakReference<>(HomeScreen.this);
         menubutton();
         cartbutton();
-        bathwindow();
-        foodwindow();
+
+    }
+    public void foodpopup(View v) {
+
+        mydialog.setContentView(R.layout.mainfoodllayout);
+        //txtclose = (TextView) mydialog.findViewById(R.id.txtclose);
+        //txtclose.setOnClickListener(new View.OnClickListener() {
+          //  @Override
+           // public void onClick(View view) {
+             //   mydialog.dismiss();
+            //}
+        //});
+        mydialog.show();
     }
     public static HomeScreen getmInstanceActivity(){
         return weakActivity.get();
@@ -75,9 +86,7 @@ public class HomeScreen extends AppCompatActivity{
             }
         });
     }
-    public void setvalue(){
-        hunger_pcount= 50;
-    }
+
     public void infopopup(View v){
         mydialog.setContentView(R.layout.babypopupinfo);
         txtclose = (TextView) mydialog.findViewById(R.id.txtclose);
@@ -236,27 +245,9 @@ public class HomeScreen extends AppCompatActivity{
             }
         });
     }
-    public void bathwindow(){
-        bathbutton=(ImageButton) findViewById(R.id.bathbutton);
-        bathbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeScreen.this,bathpage.class);
-                startActivity(intent);
-            }
-        });
 
-    }
-    public void foodwindow(){
-        foodbutton=(ImageButton) findViewById(R.id.foodbutton);
-        foodbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeScreen.this,foodpage.class);
-                startActivity(intent);
-            }
-        });
-    }
+
+
     public void setimg(int i) {
         if(i==0){
             toyimg.setImageResource(R.drawable.toys);
