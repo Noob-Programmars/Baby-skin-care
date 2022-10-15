@@ -1,14 +1,17 @@
 package com.example.babyapp;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class quizactivity extends AppCompatActivity implements View.OnClickListener{
     TextView quiztotalQues,questions;
@@ -80,15 +83,30 @@ public class quizactivity extends AppCompatActivity implements View.OnClickListe
         {
             passStatus="Failed";
         }
-        new AlertDialog.Builder(this).setTitle(passStatus).setMessage("Score is "+quizscore+" out of "+quiztotalquestions)
-                .setPositiveButton("Restart",(dialogInterface, i) -> restartQuiz()).setCancelable(false)
-                        .show();
-    }
+        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(quizactivity.this);
+        builder.setTitle(passStatus);
+        builder.setMessage("Score " + quizscore + " out of " + quiztotalquestions + " is: ");
 
-     void restartQuiz() {
+        //Button One
+        builder.setPositiveButton("Show answers", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent intent = new Intent(quizactivity.this,quizshowanswers.class);
+                startActivity(intent);
+            }
+        });
+        AlertDialog diag = builder.create();
+        diag.show();
+
+        builder.setNegativeButton("Restart",(dialogInterface, i) -> restartQuiz()).setCancelable(true).show();
+        diag.dismiss();
+
+
+    }
+    void restartQuiz() {
         quizscore=0;
         quizcurrentquestionindex=0;
         loadnewquestion();
 
-    }
+}
 }
