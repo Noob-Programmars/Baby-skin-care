@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".storeactivity">
 
+    <TextView
+        android:id="@+id/scoreview"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="100"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/homebutton"
         android:layout_width="70dp"
@@ -14,13 +28,14 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintHorizontal_bias="0.914"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.006"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/home" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="677dp"
         android:layout_marginTop="72dp"
@@ -45,9 +60,9 @@
 
                     android:layout_width="116dp"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/milk"
+                    android:layout_marginLeft="10dp"
                     android:padding="10dp"
-                    android:layout_marginLeft="10dp"/>
+                    app:srcCompat="@drawable/milk" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -81,12 +96,12 @@
 
                     <ImageButton
                         android:id="@+id/imageButton"
-                        android:onClick="milkinfopopup"
                         android:layout_width="39dp"
                         android:layout_height="37dp"
                         android:layout_marginTop="75dp"
                         android:layout_marginEnd="8dp"
                         android:background="@android:color/transparent"
+                        android:onClick="milkinfopopup"
                         android:scaleType="fitCenter"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -96,8 +111,8 @@
                         android:id="@+id/imageView9"
                         android:layout_width="39dp"
                         android:layout_height="37dp"
-                        android:scaleType="fitCenter"
                         android:layout_marginTop="75dp"
+                        android:scaleType="fitCenter"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/coin" />
@@ -117,6 +132,7 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
@@ -129,9 +145,9 @@
                 <ImageView
                     android:layout_width="116dp"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/storefood"
+                    android:layout_marginLeft="10dp"
                     android:padding="10dp"
-                    android:layout_marginLeft="10dp"/>
+                    app:srcCompat="@drawable/storefood" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -177,11 +193,11 @@
                     <ImageButton
                         android:id="@+id/imageButton2"
                         android:layout_width="39dp"
-                        android:onClick="foodpopup"
                         android:layout_height="37dp"
                         android:layout_marginTop="75dp"
                         android:layout_marginEnd="8dp"
                         android:background="@android:color/transparent"
+                        android:onClick="foodpopup"
                         android:scaleType="fitCenter"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -200,6 +216,7 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
@@ -212,9 +229,9 @@
                 <ImageView
                     android:layout_width="116dp"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/storemeds"
+                    android:layout_marginLeft="10dp"
                     android:padding="10dp"
-                    android:layout_marginLeft="10dp"/>
+                    app:srcCompat="@drawable/storemeds" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -251,10 +268,10 @@
                         android:id="@+id/imageButton3"
                         android:layout_width="39dp"
                         android:layout_height="37dp"
-                        android:onClick="medicinepopup"
                         android:layout_marginTop="75dp"
                         android:layout_marginEnd="8dp"
                         android:background="@android:color/transparent"
+                        android:onClick="medicinepopup"
                         android:scaleType="fitCenter"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -283,6 +300,7 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
@@ -295,9 +313,9 @@
                 <ImageView
                     android:layout_width="116dp"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/shampoo"
+                    android:layout_marginLeft="10dp"
                     android:padding="10dp"
-                    android:layout_marginLeft="10dp"/>
+                    app:srcCompat="@drawable/shampoo" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -309,10 +327,10 @@
                         android:id="@+id/imageButton4"
                         android:layout_width="39dp"
                         android:layout_height="37dp"
-                        android:onClick="shampoopopup"
                         android:layout_marginTop="75dp"
                         android:layout_marginEnd="8dp"
                         android:background="@android:color/transparent"
+                        android:onClick="shampoopopup"
                         android:scaleType="fitCenter"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -366,6 +384,7 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
@@ -378,9 +397,9 @@
                 <ImageView
                     android:layout_width="116dp"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/storesoap"
+                    android:layout_marginLeft="10dp"
                     android:padding="10dp"
-                    android:layout_marginLeft="10dp"/>
+                    app:srcCompat="@drawable/storesoap" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -398,18 +417,20 @@
                         app:layout_constraintEnd_toStartOf="@+id/storesoapbutton"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.925" />
+
                     <ImageButton
                         android:id="@+id/imageButton5"
                         android:layout_width="39dp"
                         android:layout_height="37dp"
                         android:layout_marginTop="75dp"
                         android:layout_marginEnd="8dp"
-                        android:onClick="soappopup"
                         android:background="@android:color/transparent"
+                        android:onClick="soappopup"
                         android:scaleType="fitCenter"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/info" />
+
                     <ImageView
                         android:id="@+id/imageView24"
                         android:layout_width="39dp"
@@ -449,6 +470,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
@@ -461,15 +483,16 @@
                 <ImageView
                     android:layout_width="116dp"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/storesponge"
+                    android:layout_marginLeft="10dp"
                     android:padding="10dp"
-                    android:layout_marginLeft="10dp"/>
+                    app:srcCompat="@drawable/storesponge" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
+
                     <TextView
                         android:id="@+id/textView26"
                         android:layout_width="39dp"
@@ -480,6 +503,7 @@
                         app:layout_constraintEnd_toStartOf="@+id/storespongebutton"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.925" />
+
                     <ImageView
                         android:id="@+id/imageView25"
                         android:layout_width="39dp"
@@ -494,10 +518,10 @@
                         android:id="@+id/imageButton7"
                         android:layout_width="39dp"
                         android:layout_height="37dp"
-                        android:onClick="spongepopup"
                         android:layout_marginTop="75dp"
                         android:layout_marginEnd="8dp"
                         android:background="@android:color/transparent"
+                        android:onClick="spongepopup"
                         android:scaleType="fitCenter"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -530,6 +554,7 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
@@ -542,15 +567,72 @@
                 <ImageView
                     android:layout_width="116dp"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/toys"
+                    android:layout_marginLeft="10dp"
                     android:padding="10dp"
-                    android:layout_marginLeft="10dp"/>
+                    app:srcCompat="@drawable/toys" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:layout_editor_absoluteY="130dp">
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="39dp"
+                            android:layout_height="39dp"
+                            android:gravity="center|left"
+                            android:text="30"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/storebluedrawerbutton"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.925" />
+
+                        <ImageView
+                            android:id="@+id/imageView28"
+                            android:layout_width="39dp"
+                            android:layout_height="37dp"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="75dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/coin" />
+
+                        <TextView
+                            android:id="@+id/textView31"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:gravity="center"
+                            android:text="Blue Drawer"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/storebluedrawerbutton"
+                            android:layout_width="103dp"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="72dp"
+
+                            android:layout_marginEnd="70dp"
+
+                            android:backgroundTint="#94000000"
+                            android:padding="5dp"
+                            android:text="BUY"
+                            android:textColor="#FFFBFB"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
                     <TextView
                         android:id="@+id/textView28"
                         android:layout_width="39dp"
@@ -561,6 +643,7 @@
                         app:layout_constraintEnd_toStartOf="@+id/storetoysbutton"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.925" />
+
                     <ImageView
                         android:id="@+id/imageView27"
                         android:layout_width="39dp"
@@ -599,6 +682,7 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
@@ -611,63 +695,12 @@
                 <ImageView
                     android:layout_width="116dp"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/drawer2"
                     android:layout_marginLeft="10dp"
-                    android:padding="10dp"/>
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/drawer2" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/textView29"
-                        android:layout_width="39dp"
-                        android:layout_height="39dp"
-                        android:gravity="center|left"
-                        android:text="30"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/storebluedrawerbutton"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.925" />
-                    <ImageView
-                        android:id="@+id/imageView28"
-                        android:layout_width="39dp"
-                        android:layout_height="37dp"
-                        android:layout_marginStart="4dp"
-                        android:layout_marginTop="75dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/coin" />
-
-                    <TextView
-                        android:id="@+id/textView31"
-                        android:layout_width="match_parent"
-                        android:layout_height="75dp"
-                        android:gravity="center"
-                        android:text="Blue Drawer"
-                        android:textAlignment="center"
-                        android:textSize="20dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <Button
-                        android:id="@+id/storebluedrawerbutton"
-                        android:layout_width="103dp"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="72dp"
-
-                        android:layout_marginEnd="70dp"
-
-                        android:backgroundTint="#94000000"
-                        android:padding="5dp"
-                        android:text="BUY"
-                        android:textColor="#FFFBFB"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
@@ -680,15 +713,16 @@
                 <ImageView
                     android:layout_width="116dp"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/drawer3"
+                    android:layout_marginLeft="10dp"
                     android:padding="10dp"
-                    android:layout_marginLeft="10dp"/>
+                    app:srcCompat="@drawable/drawer3" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
+
                     <TextView
                         android:id="@+id/textView32"
                         android:layout_width="39dp"
@@ -699,6 +733,7 @@
                         app:layout_constraintEnd_toStartOf="@+id/storedefaultdrawerbutton"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.925" />
+
                     <ImageView
                         android:id="@+id/imageView33"
                         android:layout_width="39dp"
@@ -735,6 +770,7 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
@@ -747,15 +783,16 @@
                 <ImageView
                     android:layout_width="116dp"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/crib2"
+                    android:layout_marginLeft="10dp"
                     android:padding="10dp"
-                    android:layout_marginLeft="10dp"/>
+                    app:srcCompat="@drawable/crib2" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
+
                     <TextView
                         android:id="@+id/textView33"
                         android:layout_width="39dp"
@@ -765,7 +802,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/storecribwithtoybutton"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.925"/>
+                        app:layout_constraintVertical_bias="0.925" />
+
                     <ImageView
                         android:id="@+id/imageView34"
                         android:layout_width="39dp"
@@ -803,6 +841,7 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
@@ -815,15 +854,16 @@
                 <ImageView
                     android:layout_width="116dp"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/crib3"
+                    android:layout_marginLeft="10dp"
                     android:padding="10dp"
-                    android:layout_marginLeft="10dp"/>
+                    app:srcCompat="@drawable/crib3" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
+
                     <TextView
                         android:id="@+id/textView36"
                         android:layout_width="39dp"
@@ -834,6 +874,7 @@
                         app:layout_constraintEnd_toStartOf="@+id/storemoderncribbutton"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.925" />
+
                     <ImageView
                         android:id="@+id/imageView35"
                         android:layout_width="39dp"
@@ -874,4 +915,15 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coin" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
