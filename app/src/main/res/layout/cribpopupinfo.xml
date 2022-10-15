@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="350dp"
-    android:layout_height="200dp"
+    android:layout_height="230dp"
     android:layout_gravity="center"
     android:background="#E8DFCA">
 
@@ -16,8 +16,8 @@
 
         <TextView
             android:id="@+id/txtclose"
-            android:layout_width="11dp"
-            android:layout_height="14dp"
+            android:layout_width="22dp"
+            android:layout_height="19dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="X"
@@ -27,8 +27,8 @@
         <TextView
             android:id="@+id/textView30"
             android:layout_width="184dp"
-            android:layout_height="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="80dp"
             android:gravity="center"
             android:text="Why should we keep the crib clean?"
@@ -43,6 +43,7 @@
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="32dp"
             android:gravity="center"
+            android:textColor="@color/black"
             android:text="It could be the production of too much oil (sebum) in the oil glands and hair follicles, trapping dead skin cells. Another contributor may be a yeast (fungus) called Malassezia that grows in the sebum along with bacteria."
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
