@@ -24,12 +24,12 @@ import java.util.Timer;
 import java.util.TimerTask;
 public class HomeScreen extends AppCompatActivity{
      Dialog mydialog;
-     public  int diaper_pcount = 0, hunger_pcount = 0, cribsheets_pcount = 0, cribcond_pcount = 0, balance = 100;
-     public ProgressBar diaper_pBar, hunger_pbar, cribsheets_pBar, cribcond_pBar, hunger_pbar2;
+     public  int diaper_pcount = 0, hunger_pcount = 0, cribsheets_pcount = 0, cribcond_pcount = 0, balance = 100, health_pcoount=0;
+     public ProgressBar diaper_pBar, hunger_pbar, cribsheets_pBar, cribcond_pBar, hunger_pbar2, health_pbar,health_pbar2;
      public Button diaper_pbutton, cribsheets_pbutton, cribcond_pbutton;
      TextView txtclose, warning, balanceview;
      public static WeakReference<HomeScreen> weakActivity;
-     public  ImageButton shopbutton,menubutton,hunger_pbutton1,hunger_pbutton2;
+     public  ImageButton shopbutton,menubutton,hunger_pbutton1,hunger_pbutton2, health_pbutton;
      public ImageView drawerimg,cirbimg,toyimg;
 
 
@@ -71,6 +71,8 @@ public class HomeScreen extends AppCompatActivity{
     }
     public void hungerprogress() {
         hunger_pbar = (ProgressBar) mydialog.findViewById(R.id.hungerprogressBar);
+        health_pbar = (ProgressBar) mydialog.findViewById(R.id.healthprogressBar);
+        health_pbutton = (ImageButton) mydialog.findViewById(R.id.babymedicineButton);
         hunger_pbutton1 = (ImageButton) mydialog.findViewById(R.id.babymilkButton);
         hunger_pbutton2 = (ImageButton) mydialog.findViewById(R.id.babyfoodbutton);
         hunger_pbutton1.setOnClickListener(new View.OnClickListener() {
@@ -86,10 +88,26 @@ public class HomeScreen extends AppCompatActivity{
         hunger_pbutton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (hunger_pcount < 100) {
-                    hunger_pcount = 30;
-                    balance = balance +25;
+                if (hunger_pcount < 50) {
+                    hunger_pcount = hunger_pcount + 50;
+                }else if(hunger_pcount>50 && hunger_pcount<100){
+                    hunger_pcount = hunger_pcount +(100-hunger_pcount);
+
                 }
+                balance = balance +25;
+
+            }
+        });
+        health_pbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (hunger_pcount < 50) {
+                    hunger_pcount = hunger_pcount + 50;
+                }else if(hunger_pcount>50 && hunger_pcount<100){
+                    hunger_pcount = hunger_pcount +(100-hunger_pcount);
+
+                }
+                balance = balance +25;
 
             }
         });
@@ -132,7 +150,6 @@ public class HomeScreen extends AppCompatActivity{
 
     }
     public void Showpopup(View v) {
-
         mydialog.setContentView(R.layout.babypopup);
         txtclose = (TextView) mydialog.findViewById(R.id.txtclose);
         txtclose.setOnClickListener(new View.OnClickListener() {
@@ -172,6 +189,7 @@ public class HomeScreen extends AppCompatActivity{
     public void babyprogress() {
         diaper_pBar = (ProgressBar) mydialog.findViewById(R.id.diaperprogressBar);
         hunger_pbar2 = (ProgressBar) mydialog.findViewById(R.id.hungerprogressBar);
+        health_pbar2 = (ProgressBar) mydialog.findViewById(R.id.healthprogressBar);
         diaper_pbutton = (Button) mydialog.findViewById(R.id.changediapers);
         diaper_pbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -226,7 +244,13 @@ public class HomeScreen extends AppCompatActivity{
                 hunger_pbar.setMax(100);
                 hunger_pbar2.setProgress(hunger_pcount);
                 hunger_pbar2.setMax(100);
-
+            }
+            if(health_pcoount>0){
+                health_pcoount--;
+                health_pbar.setProgress(health_pcoount);
+                health_pbar.setMax(100);
+                health_pbar2.setProgress(health_pcoount);
+                health_pbar2.setMax(100);
             }
             if(cribcond_pcount>0){
                 cribcond_pcount--;
