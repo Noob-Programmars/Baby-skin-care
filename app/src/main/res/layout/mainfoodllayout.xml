@@ -89,6 +89,39 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="56dp"
+        android:background="#6E6E6E"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView99"
+            android:layout_width="132dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#131313"
+            android:backgroundTint="#2B2A2A"
+            android:gravity="center"
+            android:text="Hunger"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <ProgressBar
+            android:id="@+id/hungerprogressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:progressDrawable="@drawable/customprogbg" />
+    </LinearLayout>
+
 
 
 

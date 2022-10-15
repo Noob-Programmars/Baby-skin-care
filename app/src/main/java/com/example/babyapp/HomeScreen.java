@@ -26,10 +26,10 @@ public class HomeScreen extends AppCompatActivity{
      Dialog mydialog;
      public  int diaper_pcount = 0, hunger_pcount = 0, cribsheets_pcount = 0, cribcond_pcount = 0, balance = 100;
      public ProgressBar diaper_pBar, hunger_pbar, cribsheets_pBar, cribcond_pBar;
-     public Button diaper_pbutton, hunger_pbutton, cribsheets_pbutton, cribcond_pbutton;
+     public Button diaper_pbutton, cribsheets_pbutton, cribcond_pbutton;
      TextView txtclose, warning, balanceview;
      public static WeakReference<HomeScreen> weakActivity;
-     public  ImageButton shopbutton, bathbutton, foodbutton,menubutton;
+     public  ImageButton shopbutton,menubutton,hunger_pbutton1,hunger_pbutton2;
      public ImageView drawerimg,cirbimg,toyimg;
 
 
@@ -64,14 +64,34 @@ public class HomeScreen extends AppCompatActivity{
     public void foodpopup(View v) {
 
         mydialog.setContentView(R.layout.mainfoodllayout);
-        //txtclose = (TextView) mydialog.findViewById(R.id.txtclose);
-        //txtclose.setOnClickListener(new View.OnClickListener() {
-          //  @Override
-           // public void onClick(View view) {
-             //   mydialog.dismiss();
-            //}
-        //});
+
         mydialog.show();
+        hungerprogress();
+    }
+    public void hungerprogress() {
+        hunger_pbar = (ProgressBar) mydialog.findViewById(R.id.hungerprogressBar);
+        hunger_pbutton1 = (ImageButton) mydialog.findViewById(R.id.babymilkButton);
+        hunger_pbutton2 = (ImageButton) mydialog.findViewById(R.id.babyfoodbutton);
+        hunger_pbutton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (hunger_pcount < 100) {
+                    hunger_pcount = 30;
+                    balance = balance +25;
+                }
+
+            }
+        });
+        hunger_pbutton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (hunger_pcount < 100) {
+                    hunger_pcount = 30;
+                    balance = balance +25;
+                }
+
+            }
+        });
     }
     public static HomeScreen getmInstanceActivity(){
         return weakActivity.get();
@@ -150,6 +170,7 @@ public class HomeScreen extends AppCompatActivity{
 
     public void babyprogress() {
         diaper_pBar = (ProgressBar) mydialog.findViewById(R.id.diaperprogressBar);
+
         diaper_pbutton = (Button) mydialog.findViewById(R.id.changediapers);
         diaper_pbutton.setOnClickListener(new View.OnClickListener() {
             @Override
