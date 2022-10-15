@@ -2,11 +2,22 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="400dp"
+    android:layout_height="600dp"
     android:layout_gravity="center"
-    tools:context=".quizshowanswers">
+    tools:context=".quizshowanswers"
+    android:background="@drawable/paperbg">
 
 
-
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="316dp"
+        android:layout_height="487dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="1. Which among these is a Diaper company, a   client of KC?\n Huggies is one of the most popular porducts when it comes to diapers.\n\n  2.Which among these is not a skin disease that affects baby?\n  Pimple is most common in teenagers and young adults.\n\n3.When is it time for baby's first bath? \nOnce baby's umbilical cord stump heals(about one to four weeks after birth) you may start bathing your little one in a tube two to three times a week. Until then you can give baby a sponge bath focusing on your little one's mouth, skin folds and diaper region\n\n4.Regular skin-to-skin contact can help?\nPracticing a skin-to-skin contact with your baby early and often can have many benifits for both of you. For baby:regulated temperature, better sleep less crying and increased feeding and weigt gain. For you emotional bonding, lower stress levels and even reduced postpartum depression."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
